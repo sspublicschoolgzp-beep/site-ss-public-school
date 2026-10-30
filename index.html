@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS Public School - Shradha Gyan Karma</title>
-    <meta name="description" content="WE started this school for the rural devlopment, Our rural section is also important in the nation growth story.">
-    <!-- Tailwind CSS CDN with typography plugin -->
+    <title>SS Public School, Ghazipur | Shradha • Gyan • Karma</title>
+    <meta name="description" content="SS Public School in Ghazipur - Empowering rural minds with modern education, experienced faculty, advanced robotics lab, and merit scholarships. Founded by Ram Prasad Gupta.">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     },
                     colors: {
                         brand: {
@@ -30,6 +33,10 @@
                             700: "#047857",
                             800: "#065f46",
                             900: "#064e3b",
+                        },
+                        gold: {
+                            500: "#f59e0b",
+                            600: "#d97706",
                         }
                     }
                 }
@@ -38,448 +45,659 @@
     </script>
     <style>
         .hero-pattern {
-            background-color: #ffffff;
-            background-image: radial-gradient(#a7f3d0 0.75px, #ffffff 0.75px);
+            background-color: #f8fafc;
+            background-image: radial-gradient(#d1fae5 0.75px, #f8fafc 0.75px);
             background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
     </style>
 </head>
-<body class="font-sans antialiased text-slate-800 bg-white selection:bg-brand-500 selection:text-white">
+<body class="font-sans antialiased text-slate-800 bg-white selection:bg-brand-600 selection:text-white">
 
-    
-    <div class="bg-gradient-to-r from-amber-600 via-rose-600 to-amber-600 text-white text-center py-2 px-4 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm">
-        <i data-lucide="tag" class="w-4 h-4"></i>
-        <span>Special Offer: Scholarship for inteligent students</span>
+    <!-- Top Alert Notification Bar -->
+    <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white text-xs sm:text-sm py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center gap-2 text-center sm:text-left">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-gold-500 text-slate-900 uppercase tracking-wider animate-pulse">
+                    Admissions 2026-27 Open
+                </span>
+                <span class="font-medium text-emerald-100">
+                    Merit Scholarships available for talented students from rural areas!
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs text-emerald-200">
+                <a href="tel:7887255183" class="hover:text-white flex items-center gap-1 transition">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                    +91 7887255183
+                </a>
+                <span class="text-emerald-700">|</span>
+                <a href="#admissions" class="hover:text-white font-semibold underline decoration-gold-500 underline-offset-4">
+                    Apply Online &rarr;
+                </a>
+            </div>
+        </div>
     </div>
-    
 
-    <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    
-                    <img src="assets/logo.svg" alt="SS Public School" class="h-11 w-auto max-w-[160px] object-contain rounded-lg shadow-sm">
-                    
-                    <div>
-                        <a href="#" class="text-xl font-bold tracking-tight text-slate-900">SS Public School</a>
-                        
-                        <p class="text-xs text-slate-500 font-medium tracking-wide uppercase">Coaching, School & Tuition (कोचिंग / स्कूल / ट्यूशन सेंटर)</p>
-                        
+                
+                <!-- School Brand Identity -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="relative">
+                        <img src="assets/logo.svg" alt="SS Public School Logo" class="h-12 w-auto object-contain">
                     </div>
-                </div>
+                    <div>
+                        <div class="text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-brand-700 transition">
+                            SS Public School
+                        </div>
+                        <div class="text-[11px] font-bold text-brand-700 uppercase tracking-widest flex items-center gap-1.5">
+                            <span>Shradha</span>
+                            <span class="w-1 h-1 rounded-full bg-gold-500"></span>
+                            <span>Gyan</span>
+                            <span class="w-1 h-1 rounded-full bg-gold-500"></span>
+                            <span>Karma</span>
+                        </div>
+                    </div>
+                </a>
 
-                <!-- Desktop Nav -->
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">About</a>
-                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Services</a>
-                    <a href="#why-us" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Why Choose Us</a>
-                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Contact</a>
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-brand-700 transition">About Our School</a>
+                    <a href="#programs" class="hover:text-brand-700 transition">Academics & Labs</a>
+                    <a href="#infrastructure" class="hover:text-brand-700 transition">Infrastructure</a>
+                    <a href="#scholarships" class="hover:text-brand-700 transition">Scholarships</a>
+                    <a href="#contact" class="hover:text-brand-700 transition">Campus & Contact</a>
                 </nav>
 
-                <!-- Header CTA -->
-                <div class="hidden md:flex items-center gap-4">
-                    
-                    <a href="https://wa.me/7887255183?text=Hello%20SS Public School,%20I'm%20interested%20in%20your%20services" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition">
+                <!-- Action CTAs -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/7887255183?text=Namaste%20SS%20Public%20School,%20I%20would%20like%20information%20regarding%20school%20admissions" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200 transition">
                         <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
-                        WhatsApp
+                        WhatsApp Inquiry
                     </a>
-                    
-                    <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-md shadow-brand-600/20 transition transform active:scale-95">
-                        Get in Touch
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <a href="#admissions" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold bg-brand-700 text-white hover:bg-brand-800 shadow-md shadow-brand-700/20 transition transform active:scale-95">
+                        <i data-lucide="graduation-cap" class="w-4 h-4 text-gold-500"></i>
+                        Enroll Now
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition" aria-label="Toggle menu">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100" aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
             </div>
         </div>
 
-        <!-- Mobile Nav Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-100 bg-white px-4 pt-2 pb-6 space-y-3">
-            <a href="#about" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">About</a>
-            <a href="#services" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Services</a>
-            <a href="#why-us" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Why Choose Us</a>
-            <a href="#contact" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Contact</a>
-            
-            <a href="https://wa.me/7887255183" target="_blank" class="block w-full text-center py-2.5 rounded-lg text-sm font-semibold bg-emerald-600 text-white mt-2">
-                Chat on WhatsApp
-            </a>
-            
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-100 bg-white px-5 pt-3 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-700">About Our School</a>
+            <a href="#programs" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-700">Academics & Labs</a>
+            <a href="#infrastructure" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-700">Infrastructure</a>
+            <a href="#scholarships" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-700">Scholarships</a>
+            <a href="#contact" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-700">Campus & Contact</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="https://wa.me/7887255183" target="_blank" class="w-full text-center py-2.5 rounded-xl text-sm font-bold bg-emerald-600 text-white">
+                    Chat on WhatsApp
+                </a>
+                <a href="tel:7887255183" class="w-full text-center py-2.5 rounded-xl text-sm font-bold bg-brand-700 text-white">
+                    Call: 7887255183
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden hero-pattern">
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden hero-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto">
-                <!-- Pill Badges -->
-                <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
-                        <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-                        Coaching, School & Tuition (कोचिंग / स्कूल / ट्यूशन सेंटर)
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Copy -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <!-- Badges -->
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6">
+                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-100 text-brand-900 border border-brand-200 shadow-sm">
+                            <i data-lucide="award" class="w-3.5 h-3.5 text-brand-700"></i>
+                            15+ Years of Educational Excellence
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-700 border border-slate-200 shadow-sm">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-600"></i>
+                            Ghazipur, Uttar Pradesh
+                        </span>
                     </div>
-                    
-                    <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 shadow-sm">
-                        <i data-lucide="user-check" class="w-3.5 h-3.5 text-brand-600"></i>
-                        <span>Founder: Ram Prasad Gupta</span>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+                        Empowering Rural Minds, <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-600">
+                            Shaping Tomorrow's Leaders.
+                        </span>
+                    </h1>
+
+                    <!-- Vision Paragraph -->
+                    <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                        At <strong class="text-slate-900">SS Public School</strong>, we believe every child in our rural heartland deserves access to world-class learning, modern robotics labs, experienced educators, and values that build character.
+                    </p>
+
+                    <!-- Key Bullet Points -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10 text-left max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                            <span>Modern Robotics Lab</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                            <span>Experienced Teachers</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 shrink-0"></i>
+                            <span>Merit Scholarships</span>
+                        </div>
                     </div>
-                    
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#admissions" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-bold bg-brand-700 text-white hover:bg-brand-800 shadow-xl shadow-brand-700/25 transition transform active:scale-95">
+                            <i data-lucide="user-plus" class="w-5 h-5 text-gold-500"></i>
+                            Apply for Admission 2026
+                        </a>
+                        <a href="tel:7887255183" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-base font-semibold bg-white text-slate-800 hover:bg-slate-50 border border-slate-200 shadow-sm transition">
+                            <i data-lucide="phone-call" class="w-5 h-5 text-brand-600"></i>
+                            Call: 7887255183
+                        </a>
+                    </div>
+
+                    <!-- Timings Pill Note -->
+                    <div class="mt-6 flex items-center justify-center lg:justify-start gap-2 text-xs text-slate-500">
+                        <i data-lucide="clock" class="w-4 h-4 text-slate-400"></i>
+                        <span>Campus Hours: Monday - Saturday: 9:00 AM - 1:00 PM</span>
+                    </div>
                 </div>
 
-                <!-- Hero Heading -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-                    Shradha Gyan Karma
-                </h1>
+                <!-- Right Hero Imagery Composite -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Background Glow Accent -->
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-brand-600/20 to-gold-500/20 rounded-3xl blur-2xl pointer-events-none"></div>
+                        
+                        <!-- Main Campus Image Frame -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&auto=format&fit=crop&q=80" alt="Students in modern classroom learning robotics and science" class="w-full h-[420px] object-cover">
+                            
+                            <!-- Overlay Founder Quote Badge -->
+                            <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent text-white">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gold-500 text-slate-950 flex items-center justify-center font-bold text-lg shrink-0">
+                                        R
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-semibold text-gold-400 uppercase tracking-wider">Founder's Mission</p>
+                                        <p class="text-sm font-bold text-white">Shri Ram Prasad Gupta</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-slate-300 mt-2 italic leading-relaxed">
+                                    "Our rural children are the cornerstone of India's growth story. Providing them modern education is our sacred mission."
+                                </p>
+                            </div>
+                        </div>
 
-                <!-- Hero Description -->
-                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed font-normal">
-                    WE started this school for the rural devlopment, Our rural section is also important in the nation growth story.
-                </p>
+                        <!-- Floating Stat Card 1 -->
+                        <div class="absolute -top-4 -left-4 glass-card p-3.5 rounded-2xl shadow-lg border border-white/60 hidden sm:flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-lg">
+                                <i data-lucide="cpu" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Equipped With</p>
+                                <p class="text-sm font-extrabold text-slate-900">Robotics & AI Lab</p>
+                            </div>
+                        </div>
 
-                <!-- Hero CTAs -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    
-                    <a href="tel:7887255183" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-lg shadow-brand-600/25 transition transform active:scale-95">
-                        <i data-lucide="phone-call" class="w-5 h-5"></i>
-                        Call 7887255183
-                    </a>
-                    
-                    
-                    <a href="https://wa.me/7887255183" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-base font-semibold bg-white text-slate-800 hover:bg-slate-50 border border-slate-200 shadow-sm transition">
-                        <i data-lucide="message-circle" class="w-5 h-5 text-emerald-600"></i>
-                        Instant WhatsApp Chat
-                    </a>
-                    
+                        <!-- Floating Stat Card 2 -->
+                        <div class="absolute -bottom-6 -right-4 glass-card p-4 rounded-2xl shadow-xl border border-white/60 hidden sm:flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-600 flex items-center justify-center font-bold">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Merit Aid</p>
+                                <p class="text-sm font-extrabold text-slate-900">100% Scholarships</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Trust Stats / Highlights -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 border-t border-slate-100 max-w-2xl mx-auto mt-12 text-center">
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-lg sm:text-xl font-extrabold text-brand-600">15+ Years of Trusted Experience</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Experience & Trust</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-sm sm:text-base font-bold text-slate-800 line-clamp-1">"Monday - Saturday: 9:00 AM - 1:00 PM</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Working Hours</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                        <div class="text-lg sm:text-xl font-extrabold text-brand-600">100% Guaranteed</div>
-                        <div class="text-xs text-slate-500 font-medium mt-1">Quality Service</div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Strip -->
+    <section class="bg-brand-900 text-white py-12 border-y border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-brand-800">
+                <div class="pt-4 md:pt-0">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold-500 mb-1">15+</div>
+                    <div class="text-xs sm:text-sm text-emerald-200 font-medium">Years of Academic Trust</div>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold-500 mb-1">100%</div>
+                    <div class="text-xs sm:text-sm text-emerald-200 font-medium">Personalized Mentorship</div>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold-500 mb-1">Smart</div>
+                    <div class="text-xs sm:text-sm text-emerald-200 font-medium">Digital Classrooms & Labs</div>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold-500 mb-1">Rural</div>
+                    <div class="text-xs sm:text-sm text-emerald-200 font-medium">Empowerment & Excellence</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-slate-50 border-y border-slate-100">
+    <!-- About & Founder Vision Section -->
+    <section id="about" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-brand-100 text-brand-800 mb-4">
-                        ABOUT US
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Founder Story Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&auto=format&fit=crop&q=80" alt="Dedicated teacher helping students" class="w-full h-[450px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent p-8 flex flex-col justify-end text-white">
+                            <span class="inline-block px-3 py-1 rounded-md text-xs font-bold bg-brand-600 text-white w-max mb-2">FOUNDER VISION</span>
+                            <h3 class="text-2xl font-bold">Shri Ram Prasad Gupta</h3>
+                            <p class="text-sm text-slate-300 mt-1">Founder & Managing Director, SS Public School</p>
+                        </div>
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-6">
-                        Committed to Delivering Excellence in Every Detail
+                </div>
+
+                <!-- Right Narrative -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-bold bg-brand-100 text-brand-800 mb-4 uppercase tracking-wider">
+                        OUR CORE PHILOSOPHY
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+                        Bridging the Rural-Urban Education Divide in Ghazipur
                     </h2>
                     <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
-                        WE started this school for the rural devlopment, Our rural section is also important in the nation growth story.
+                        SS Public School was established with a singular, noble conviction: <strong class="text-slate-900">India’s rural children possess boundless potential, and quality education should never be restricted to big metro cities.</strong>
                     </p>
-                    
-                    <div class="space-y-3">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
-                                <i data-lucide="check" class="w-4 h-4"></i>
+                    <p class="text-slate-600 text-base leading-relaxed mb-8">
+                        Guided by our motto of <strong class="text-brand-800">Shradha</strong> (Devotion), <strong class="text-brand-800">Gyan</strong> (Wisdom), and <strong class="text-brand-800">Karma</strong> (Right Action), we blend traditional moral ethics with next-generation 21st-century skills like robotics, computer literacy, and practical scientific inquiry.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="book-open" class="w-5 h-5"></i>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Experienced professionals dedicated to your success</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Comprehensive Curriculum</h4>
+                                <p class="text-xs text-slate-500 mt-1">Holistic syllabus fostering intellectual, emotional, and social development.</p>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
-                                <i data-lucide="check" class="w-4 h-4"></i>
+
+                        <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="users" class="w-5 h-5"></i>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Transparent pricing with no hidden charges</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
-                                <i data-lucide="check" class="w-4 h-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Caring Mentors</h4>
+                                <p class="text-xs text-slate-500 mt-1">Experienced and empathetic teachers attentive to every child's learning pace.</p>
                             </div>
-                            <span class="text-slate-700 font-medium text-sm sm:text-base">Custom tailored solutions suited to your requirements</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Feature Card / Visual Accent -->
-                <div class="relative">
-                    <div class="bg-gradient-to-tr from-brand-600 to-brand-800 rounded-3xl p-8 sm:p-10 text-white shadow-2xl relative overflow-hidden">
-                        <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
-                        <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6">
-                            <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3">Our Core Promise</h3>
-                        <p class="text-brand-100 text-sm sm:text-base leading-relaxed mb-8">
-                            At SS Public School, we put customer trust and quality above all else. Every project is handled with precision, care, and transparent communication.
-                        </p>
-                        <div class="border-t border-white/20 pt-6 flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-brand-200">Contact Us Directly</p>
-                                <p class="text-base font-bold text-white">sspublicschoolgzp@gmail.com</p>
-                            </div>
-                            <a href="#contact" class="px-4 py-2 rounded-full bg-white text-brand-800 text-xs font-bold hover:bg-brand-50 transition">
-                                Connect
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Academic Offerings & Infrastructure Grid -->
+    <section id="programs" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-brand-100 text-brand-800 mb-4">
-                    OUR SERVICES
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">
-                    Comprehensive Solutions Tailored For You
+                <span class="inline-block px-3 py-1 rounded-md text-xs font-bold bg-brand-100 text-brand-800 mb-3 uppercase tracking-wider">
+                    FACILITIES & OFFERINGS
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    World-Class Infrastructure for Young Explorers
                 </h2>
                 <p class="text-slate-600 text-base sm:text-lg">
-                    Discover how SS Public School can help you reach your goals with our premium service offerings.
+                    We bring the finest educational tools right to Ghazipur, nurturing well-rounded students ready for the future.
                 </p>
             </div>
 
-            <!-- Services Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
+                <!-- Card 1: Robotics & Innovation -->
+                <div class="group rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=80" alt="Robotics lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-brand-900 text-white shadow">
+                                STEM & AI
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Consultation & Planning
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Expert guidance and strategic planning for optimal project outcomes.
-                        </p>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-700 transition">
+                                Advanced Robotics & Coding Lab
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Hands-on STEM learning where students build electronic circuits, understand basic robotics mechanisms, and develop computational problem-solving from an early age.
+                            </p>
+                        </div>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-brand-700 flex items-center justify-between">
+                        <span>Hands-On Learning</span>
                         <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
                     </div>
                 </div>
-                
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
+
+                <!-- Card 2: Faculty & Mentorship -->
+                <div class="group rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&auto=format&fit=crop&q=80" alt="Experienced teacher" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-brand-900 text-white shadow">
+                                Expert Faculty
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Execution & Delivery
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            End-to-end execution maintaining the highest standards of quality.
-                        </p>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-700 transition">
+                                Dedicated & Experienced Teachers
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Our qualified educators do more than lecture—they ignite curiosity, mentor students individually, and maintain a disciplined, supportive classroom atmosphere.
+                            </p>
+                        </div>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-brand-700 flex items-center justify-between">
+                        <span>Low Student-Teacher Ratio</span>
                         <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
                     </div>
                 </div>
-                
-                <div class="group p-8 rounded-2xl bg-white border border-slate-200/80 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between">
+
+                <!-- Card 3: Modern Campus & Clean Infrastructure -->
+                <div class="group rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition duration-300">
-                            <i data-lucide="life-buoy" class="w-6 h-6"></i>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80" alt="School classroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold bg-brand-900 text-white shadow">
+                                Safe Campus
+                            </span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition">
-                            Ongoing Support
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                            Continuous dedicated assistance to ensure long-term satisfaction.
-                        </p>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-700 transition">
+                                Modern & Safe Infrastructure
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Bright, ventilated classrooms, purified drinking water, sanitary washrooms, library corners, and spacious sports grounds for athletic fitness and drills.
+                            </p>
+                        </div>
                     </div>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-600">
-                        <span>Learn more</span>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-100 text-xs font-bold text-brand-700 flex items-center justify-between">
+                        <span>Safe & Monitored Campus</span>
                         <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition"></i>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us / Trust Badges -->
-    <section id="why-us" class="py-20 bg-slate-900 text-white">
+    <!-- Scholarships & Financial Aid Callout -->
+    <section id="scholarships" class="py-16 bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-gold-500 text-slate-950 mb-4 uppercase tracking-wider">
+                        ★ MERIT AID SCHEME
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                        Merit Scholarships for Intelligent & Deserving Students
+                    </h2>
+                    <p class="text-emerald-100 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Financial constraints should never stop a dedicated child from achieving greatness. SS Public School offers tuition fee waivers and scholarship programs for meritorious boys and girls from rural backgrounds.
+                    </p>
+                </div>
+                <div class="lg:col-span-4 text-center lg:text-right">
+                    <a href="https://wa.me/7887255183?text=Hello%20SS%20Public%20School,%20I%20would%20like%20to%20know%20more%20about%20the%20Merit%20Scholarship%20test" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base font-bold bg-gold-500 hover:bg-gold-600 text-slate-950 transition shadow-xl transform active:scale-95">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                        Inquire About Scholarship
+                    </a>
+                    <p class="text-xs text-emerald-300 mt-2">Special aptitude assessment conducted at the school campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process & Timeline (How to Join) -->
+    <section id="admissions" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-                    Why Choose SS Public School?
+                <span class="inline-block px-3 py-1 rounded-md text-xs font-bold bg-brand-100 text-brand-800 mb-3 uppercase tracking-wider">
+                    EASY 3-STEP ADMISSION
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    How to Enroll Your Child for 2026-27
                 </h2>
-                <p class="text-slate-400 text-base sm:text-lg">
-                    Here is what sets our services and commitment apart from the rest.
+                <p class="text-slate-600 text-base sm:text-lg">
+                    We make the enrollment process simple, transparent, and welcoming for every parent.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="award" class="w-7 h-7"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-extrabold text-xl mb-6 shadow-md shadow-brand-600/30">
+                        1
                     </div>
-                    <h3 class="text-lg font-bold mb-2">Proven Track Record</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Consistent results and trusted delivery that our clients can rely on day after day.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Connect & Inquire</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Call us directly or send a WhatsApp message to <span class="font-semibold text-slate-900">+91 7887255183</span> to receive the prospectus, syllabus details, and admission form.
                     </p>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="clock" class="w-7 h-7"></i>
+                <!-- Step 2 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-extrabold text-xl mb-6 shadow-md shadow-brand-600/30">
+                        2
                     </div>
-                    <h3 class="text-lg font-bold mb-2">Fast Turnaround</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        We value your time. Prompt responses and timely execution on every service request.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Campus Visit & Interaction</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Visit our Newada, Lawa, Ghazipur campus during morning hours (9:00 AM - 1:00 PM) to tour the classrooms, robotics lab, and speak directly with faculty.
                     </p>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                <!-- Step 3 -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-extrabold text-xl mb-6 shadow-md shadow-brand-600/30">
+                        3
                     </div>
-                    <h3 class="text-lg font-bold mb-2">Customer-First Focus</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Personalized attention and responsive support whenever you have questions or updates.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Admission & Welcome</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Submit required documents (Birth certificate, prior report cards), apply for merit scholarships if eligible, and welcome your child to the SS Public School family!
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-slate-50">
+    <!-- Campus & Contact Section -->
+    <section id="contact" class="py-20 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                    <!-- Left: Contact Details -->
-                    <div class="p-8 sm:p-12 lg:p-16 bg-brand-700 text-white flex flex-col justify-between">
+            <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl text-white">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    
+                    <!-- Left Contact Details -->
+                    <div class="lg:col-span-6 p-8 sm:p-12 lg:p-14 flex flex-col justify-between bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900">
                         <div>
-                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold bg-white/20 text-white mb-6">
+                            <span class="inline-block px-3 py-1 rounded-md text-xs font-bold bg-white/20 text-emerald-200 mb-4 uppercase tracking-wider">
                                 GET IN TOUCH
-                            </div>
-                            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-                                Ready to work together?
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                                Visit Our Campus
                             </h2>
-                            <p class="text-brand-100 text-base leading-relaxed mb-10">
-                                Contact SS Public School today for inquiries, quotes, or consultations. We look forward to speaking with you!
+                            <p class="text-emerald-100 text-sm sm:text-base leading-relaxed mb-8">
+                                Parents are warmly invited to visit our school campus, meet teachers, and discover our teaching environment.
                             </p>
 
                             <div class="space-y-6">
-                                
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                                        <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+                                <!-- Phone -->
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="phone" class="w-5 h-5 text-gold-400"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-brand-200 uppercase font-semibold">Phone</div>
-                                        <a href="tel:7887255183" class="text-lg font-semibold hover:underline">7887255183</a>
+                                        <p class="text-xs text-emerald-300 font-semibold uppercase">Direct Calling Phone</p>
+                                        <a href="tel:7887255183" class="text-lg font-bold text-white hover:text-gold-400 transition">+91 7887255183</a>
                                     </div>
                                 </div>
-                                
 
-                                
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                                        <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+                                <!-- WhatsApp -->
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-brand-200 uppercase font-semibold">Email</div>
-                                        <a href="mailto:sspublicschoolgzp@gmail.com" class="text-lg font-semibold hover:underline">sspublicschoolgzp@gmail.com</a>
+                                        <p class="text-xs text-emerald-300 font-semibold uppercase">Instant WhatsApp Support</p>
+                                        <a href="https://wa.me/7887255183" target="_blank" class="text-lg font-bold text-white hover:text-emerald-400 transition">+91 7887255183</a>
                                     </div>
                                 </div>
-                                
 
-                                
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                                        <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+                                <!-- Hours -->
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="clock" class="w-5 h-5 text-gold-400"></i>
                                     </div>
                                     <div>
-                                        <div class="text-xs text-brand-200 uppercase font-semibold">Location</div>
-                                        <div class="text-base font-semibold">Newada, Lawa, Ghazipur</div>
+                                        <p class="text-xs text-emerald-300 font-semibold uppercase">Visiting & Office Timings</p>
+                                        <p class="text-sm font-semibold text-white">Monday - Saturday: 9:00 AM - 1:00 PM</p>
                                     </div>
                                 </div>
-                                
+
+                                <!-- Address -->
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="map-pin" class="w-5 h-5 text-gold-400"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-emerald-300 font-semibold uppercase">Campus Address</p>
+                                        <p class="text-sm font-semibold text-white">Newada, Lawa, Ghazipur, Uttar Pradesh</p>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="mail" class="w-5 h-5 text-gold-400"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-emerald-300 font-semibold uppercase">Official Email</p>
+                                        <a href="mailto:sspublicschoolgzp@gmail.com" class="text-sm font-semibold text-white hover:underline">sspublicschoolgzp@gmail.com</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        
-                        <div class="mt-12 pt-8 border-t border-white/20">
-                            <a href="https://wa.me/7887255183" target="_blank" class="w-full inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-full text-sm font-bold bg-emerald-500 hover:bg-emerald-600 text-white transition shadow-lg">
-                                <i data-lucide="message-circle" class="w-5 h-5"></i>
-                                Direct WhatsApp Message
+                        <!-- Google Maps Link Button -->
+                        <div class="mt-8 pt-6 border-t border-white/10">
+                            <a href="https://share.google/4WWJkZpAil0pXQFz6" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-gold-400 hover:text-white transition">
+                                <i data-lucide="navigation" class="w-4 h-4"></i>
+                                Open Location on Google Maps &rarr;
                             </a>
                         </div>
-                        
                     </div>
 
-                    <!-- Right: Quick Message Form -->
-                    <div class="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Send an Inquiry</h3>
-                        <p class="text-slate-600 text-sm mb-8">Fill out the quick form below and we will get back to you shortly.</p>
-                        
-                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to SS Public School.');" class="space-y-4">
+                    <!-- Right Quick Inquiry Form -->
+                    <div class="lg:col-span-6 p-8 sm:p-12 lg:p-14 bg-white text-slate-800 flex flex-col justify-center">
+                        <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Request an Admission Callback</h3>
+                        <p class="text-slate-500 text-sm mb-6">Leave your details and our admission counselor will call you back within 24 hours.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Dhanyawaad! Your inquiry has been sent to SS Public School. Our team will contact you shortly on ' + document.getElementById('phone-input').value);" class="space-y-4">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Full Name</label>
-                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Parent / Guardian Name</label>
+                                <input type="text" required placeholder="Shri Rajesh Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600">
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Email Address</label>
-                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Phone Number</label>
+                                    <input id="phone-input" type="tel" required placeholder="9876543210" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Phone Number</label>
-                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Seeking Class / Grade</label>
+                                    <select class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600">
+                                        <option>Nursery / Kindergarten</option>
+                                        <option>Class 1 - 5 (Primary)</option>
+                                        <option>Class 6 - 8 (Middle)</option>
+                                        <option>Class 9 - 10 (High School)</option>
+                                    </select>
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1.5 uppercase">Message / Requirements</label>
-                                <textarea rows="4" required placeholder="Tell us how we can help you..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Questions or Message (Optional)</label>
+                                <textarea rows="3" placeholder="Inquiry about scholarship, transport, or fees..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600"></textarea>
                             </div>
-                            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-slate-900 hover:bg-black text-white font-semibold text-sm transition shadow-md">
-                                Submit Message
+                            <button type="submit" class="w-full py-4 px-6 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-sm shadow-lg shadow-brand-700/20 transition transform active:scale-95">
+                                Submit Callback Request
                             </button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
+    <footer class="bg-slate-950 text-white py-14 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-slate-800">
                 
-                <img src="assets/logo.svg" alt="SS Public School" class="h-9 w-auto max-w-[120px] object-contain rounded-md">
-                
-                <span class="text-sm font-semibold text-slate-800">SS Public School</span>
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="assets/logo.svg" alt="SS Public School Logo" class="h-10 w-auto object-contain">
+                        <span class="text-xl font-bold tracking-tight text-white">SS Public School</span>
+                    </div>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm mb-4">
+                        Empowering the rural talent of Ghazipur with modern education, high-tech robotics learning, values of integrity, and academic excellence.
+                    </p>
+                    <p class="text-xs text-gold-500 font-semibold tracking-wider uppercase">
+                        Shradha • Gyan • Karma
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="md:col-span-3 text-xs sm:text-sm space-y-2">
+                    <p class="font-bold text-white uppercase tracking-wider text-xs mb-3 text-emerald-400">Quick Links</p>
+                    <a href="#about" class="block text-slate-400 hover:text-white transition">About the School</a>
+                    <a href="#programs" class="block text-slate-400 hover:text-white transition">Robotics & STEM Lab</a>
+                    <a href="#scholarships" class="block text-slate-400 hover:text-white transition">Merit Scholarships</a>
+                    <a href="#admissions" class="block text-slate-400 hover:text-white transition">Admission Process</a>
+                </div>
+
+                <!-- Col 3: Contact Summary -->
+                <div class="md:col-span-4 text-xs sm:text-sm text-slate-400 space-y-2">
+                    <p class="font-bold text-white uppercase tracking-wider text-xs mb-3 text-emerald-400">Campus Contact</p>
+                    <p>📍 Newada, Lawa, Ghazipur, UP</p>
+                    <p>📞 Phone: +91 7887255183</p>
+                    <p>✉️ Email: sspublicschoolgzp@gmail.com</p>
+                    <p>🕒 Mon - Sat: 9:00 AM - 1:00 PM</p>
+                </div>
+
             </div>
-            <p class="text-xs text-slate-500">
-                &copy; 2026 SS Public School. All rights reserved. Powered by Instant Auto-Site.
-            </p>
-            <div class="flex items-center gap-6 text-xs text-slate-500">
-                <a href="#about" class="hover:text-brand-600">About</a>
-                <a href="#services" class="hover:text-brand-600">Services</a>
-                <a href="#contact" class="hover:text-brand-600">Contact</a>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 SS Public School. Founded by Shri Ram Prasad Gupta. All rights reserved.</p>
+                <p>Designed with care for rural educational empowerment.</p>
             </div>
         </div>
     </footer>
